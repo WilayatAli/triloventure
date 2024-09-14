@@ -225,22 +225,7 @@ body{
     width: 100%;
     height:60px;
 }
-@media (max-width:600px){
-    .logo img{
-        max-width: 100%;
-    }
-    .logo img{
-        height:50px;
-    }
-}
-@media (max-width:374px){
-    .logo img{
-        max-width: 140px;
-    }
-    .logo img{
-        height:50px;
-    }
-}
+
 .contactHeader{
     display: flex;
     align-items: center;
@@ -463,9 +448,7 @@ body{
 }
 
 /* details pkg */
-.highlight{
-   
-}
+
 .highlightsWrapper{
     display: flex;
     gap: 12px;
@@ -552,6 +535,13 @@ body{
     }
     .header_banner{
         padding: 4px 12px ;
+    }
+    .sideLinksSlider{
+        top: 16px;
+    }
+    .serviceCard{
+        width: 100%;
+        height: auto;
     }
 }
 
