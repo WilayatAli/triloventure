@@ -537,11 +537,15 @@ body{
         padding: 4px 12px ;
     }
     .sideLinksSlider{
-        top: 16px;
+        top: 19px;
     }
     .serviceCard{
         width: 100%;
         height: auto;
+    }
+    .logo img{
+        width: 160px;
+        height:50px;
     }
 }
 
