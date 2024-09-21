@@ -546,6 +546,11 @@ body {
     position: relative;
     word-break: break-all;
 }
+@media (max-width: 580px){
+    .cardContents a h2{
+        word-break: unset;
+    }
+}
 
 .tourPackageCard:hover h2 {
     color: #004b91;

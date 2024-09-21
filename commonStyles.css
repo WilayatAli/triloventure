@@ -938,7 +938,12 @@ body{
     .packageDetailsHeading{
         font-size: 20px;
     }
-    
+    .tagName {
+        padding: 4px 7px;
+    }
+    .min-heading-height {
+        min-height: 48px;
+    }
 }
 @media(max-width:430px){
     .smallHeadings{
@@ -953,7 +958,7 @@ body{
         padding-inline: 12px;
     }
     .pkg-btn {
-        padding: 4px 6px;
+        padding: 4px 9px;
         font-size: 13px;
     }
     
