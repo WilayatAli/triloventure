@@ -295,15 +295,8 @@ body {
 }
 
 
-.carousel-indicators li {
-    background-color: #ccc;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
 .carousel-indicators .active {
-    background-color: #ff7300;
+    background-color: #0be928;
 }
 
 .carousel-inner {
@@ -365,7 +358,7 @@ body {
 
 .carousel-caption h5 {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
@@ -459,12 +452,15 @@ body {
 }
 
 .btn-bg-color {
-    background-color: #22473c;
+    background-color: #bdbdbd;
 }
 
 .tapOneLink:hover {
     transform: translateX(60px);
     background-color: #1f7a7a;
+}
+.color-orange{
+    background-color: #fc7609;
 }
 
 .tapOneLink img {
@@ -498,12 +494,14 @@ body {
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     overflow: hidden;
-    border-radius: 8px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
     transition: .3s ease;
 }
 
 .tourPackageCard:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #e1f0e310;
 }
 
 .cardImage {
@@ -761,7 +759,7 @@ section {
 }
 
 .contact-page-form form {
-    padding: 20px 15px 0;
+    /* padding: 20px 15px 0; */
     padding-top: 0px;
 }
 
@@ -778,7 +776,8 @@ section {
     height: 210px;
     padding: 14px;
     background-color: #f5f0f0;
-    border-radius: 8px;
+    border-top-right-radius:16px;
+    border-bottom-left-radius: 16px;
     position: relative;
     overflow: hidden;
     z-index: 555;
@@ -786,7 +785,7 @@ section {
     transition: .4s linear;
 }
 .serviceCard:hover{
-    background-color: #56d75623;
+    background-color: #5674d723;
 }
 .serviceCard h3{
     font-size: 15px;
@@ -805,7 +804,7 @@ section {
     width: 160px;
     height: 160px;
     border-radius: 100%;
-    background-color: #56d75623;
+    background-color: #e5f31a23;
     position: absolute;
     bottom: -40px;
     right: -40px;
@@ -852,6 +851,11 @@ section {
 }
 .innerLinks .active{
     color: #ff5e00;
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .about-content-wrapper{
     margin-top: 15px;
@@ -893,6 +897,7 @@ section {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .gallery-item {
@@ -944,21 +949,37 @@ section {
 /* contact */
 .Contact-wrapper-form{
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1060px;
+    margin-inline: auto;
 }
 .form-width{
     width: 100%;
-    max-width: 800px;
+    max-width: 1060px;
     padding-right: 1px;
     padding-left: 20px;
+    margin-inline: auto;
 }
-.flex-contact{
+.flex-contact {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px 10px;
     padding: 14px 14px;
     background-color: #62cb872e;
     border-radius: 8px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    width: 250px;
+    height: 100px;
+}
+@media (max-width: 589px){
+    .flex-contact{
+        width: 100%;
+    }
 }
 .flex-contact img{
     width: 26px;
@@ -994,6 +1015,39 @@ section {
     margin-bottom: 30px;
     margin-top: 20px;
 }
+.contactAddress{
+    margin: 0px !important;
+}
+.paymentWrappers{
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    gap: 10px;
+}
+.easyPeasa{
+    width: 66px !important;
+}
+.paymentWrapper img{
+    width: 78px;
+    opacity: 50%;
+}
+.detail-btn{
+    padding: 6px 14px;
+    background-color: #3a4e0b;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 4px;
+}
+.detail-btn:hover{
+    color: #fff;
+}
+.min-heading-height{
+    min-height: 54px;
+}
+.mailwhitespace{
+    white-space: nowrap;
+}
 @media (max-width:767px){
     .whyChooseUs {
         padding-top: 20px;
@@ -1003,7 +1057,7 @@ section {
         font-weight: 600;
     }
     .PackageDetailsContents h6{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 25px;
     }
     .PackageDetailsContents h3{
@@ -1023,13 +1077,29 @@ section {
         height: auto;
     }
     .Contact-wrapper-form{
-        padding-left: 20px;
+        padding-left: 4px;
+        gap: 8px;
     }
     .padding-custom-from{
-        padding-right: 20px;
+        padding-right: 4px;
+        width: 100%;
+        max-width: 1060px;
+        margin-inline: auto;
+    }
+    .pright{
+        padding-right: 16px;
     }
     .Contact-wrapper-form{
         width: 100%;
+    }
+    .mailwhitespace{
+        white-space: unset;
+    }
+    .contact-form-text h2 {
+        font-size: 24px;
+    }
+    .contact-form-text h2::before {
+        top: 29px;
     }
 }
 @media (max-width:968px){
